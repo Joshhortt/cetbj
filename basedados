@@ -1,0 +1,30 @@
+------------------------------------------------------------------------
+-- PHPMYADMIN
+------------------------------------------------------------------------
+-- 1. Open PHPMYADMIN
+-- 2. New
+-- 3. SQL
+-- 4. CREATE DATABASE cetbj
+-- 4. CRAETE TABLE formandos + column parameters + datatype parameter
+------------------------------------------------------------------------
+CREATE TABLE formandos  (
+     idForm INT AUTO_INCREMENT PRIMARY KEY,
+	nomeForm VARCHAR(50) NOT NULL,
+     morada VARCHAR(50),
+     codPostal VARCHAR(10),
+     local VARCHAR(20),
+     numForm INT NOT NULL,
+     emailForm TINYTEXT NOT NULL,
+     telForm VARCHAR(12),
+     genero VARCHAR(1) NOT NULL,
+     dataNasc DATE
+)
+
+INSERT INTO formandos
+(nomeForm, morada, codPostal, local, numForm, emailForm, telForm, genero, dataNasc)
+
+VALUES
+("Jose Calvario", "Rua dataNasc", "7800-721", 9, "Beja", "josecalvario@gmail.com",
+ "911815877", "M", "1971-07-21")
+
+
